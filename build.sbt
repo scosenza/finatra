@@ -847,6 +847,7 @@ lazy val kafkaStreamsStaticPartitioning = (project in file("kafka-streams/kafka-
   .settings(
     name := "finatra-kafka-streams-static-partitioning",
     moduleName := "finatra-kafka-streams-static-partitioning",
+    ScoverageKeys.coverageExcludedPackages := "<empty>;.*",
     excludeDependencies in Test ++= kafkaStreamsExclusionRules,
     excludeDependencies ++= kafkaStreamsExclusionRules,
     excludeFilter in unmanagedResources := "BUILD"
@@ -864,6 +865,7 @@ lazy val kafkaStreamsPrerestore = (project in file("kafka-streams/kafka-streams-
   .settings(
     name := "finatra-kafka-streams-prerestore",
     moduleName := "finatra-kafka-streams-prerestore",
+    ScoverageKeys.coverageExcludedPackages := "<empty>;.*",
     excludeDependencies in Test ++= kafkaStreamsExclusionRules,
     excludeDependencies ++= kafkaStreamsExclusionRules,
     excludeFilter in unmanagedResources := "BUILD"
